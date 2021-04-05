@@ -373,7 +373,7 @@ def main():
         MLMethod = 0
         if distType == None:
             print("Need to enter a distance metric to use with the -d/--distType option")
-            System.exit(1)
+            sys.exit(1)
     else:
         MLMethod = args["algorithm"][0] 
 
@@ -381,7 +381,7 @@ def main():
         distType = args["distType"][0] # What distance metric to use. 
     elif args["distType"] == None and MLMethod == 0:
         print("Need to enter a distance metric to use with the -d/--distType option")
-        System.exit(1)
+        sys.exit(1)
     else:
         distType = "NA"
 
